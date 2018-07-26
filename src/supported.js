@@ -4,7 +4,7 @@
  *
  * @returns {boolean}
  */
-export default function isCopySupported() {
+export default function isSupported() {
     return typeof document !== 'undefined'
         && typeof document.queryCommandSupported === 'function'
         && document.queryCommandSupported('copy');

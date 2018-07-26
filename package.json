@@ -1,8 +1,8 @@
 {
   "name": "clipbrd",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lightweight copy to clipboard for modern browsers",
-  "main": "dist/index.min.js",
+  "main": "dist/index.js",
   "module": "src/index.js",
   "files": [
     "/src/",
@@ -14,7 +14,7 @@
     "bundle:min": "rollup -c build/rollup.uglify.config.js",
     "lint": "eslint --ext .js ./src",
     "lint:fix": "eslint --ext .js ./src --fix",
-    "test": "jest",
+    "test": "lint",
     "coverage": "jest --coverage",
     "prepublishOnly": "npm run lint && npm run build"
   },

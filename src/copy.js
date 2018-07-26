@@ -6,7 +6,7 @@
  * @param {string} str
  * @returns {boolean}
  */
-export default function copyToClipboard(str) {
+export default function copy(str) {
     // Create a <textarea> element
     const el = document.createElement('textarea');
     // Set its value to the string that you want copied
