@@ -1,6 +1,6 @@
 {
   "name": "clipbrd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight copy to clipboard for modern browsers ",
   "main": "dist/index.min.js",
   "module": "src/index.js",
@@ -16,7 +16,7 @@
     "lint:fix": "eslint --ext .js ./src --fix",
     "test": "jest",
     "coverage": "jest --coverage",
-    "prepublishOnly": "lint && build"
+    "prepublishOnly": "npm run lint && npm run build"
   },
   "repository": {
     "type": "git",

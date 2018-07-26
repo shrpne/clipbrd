@@ -5,12 +5,7 @@
  * @returns {boolean}
  */
 export default function isCopySupported() {
-    const actions = ['copy'];
-    let support = typeof document !== 'undefined' && typeof document.queryCommandSupported === 'function';
-
-    actions.forEach((action) => {
-        support = support && document.queryCommandSupported(action);
-    });
-
-    return support;
+    return typeof document !== 'undefined'
+        && typeof document.queryCommandSupported === 'function'
+        && document.queryCommandSupported('copy');
 }
