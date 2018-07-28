@@ -9,8 +9,11 @@ const height = 900;
 beforeAll(async () => {
     browser = await puppeteer.launch({
         // headless: false, // required!
-        // slowMo: 80,
-        args: [`--window-size=${width},${height}`],
+        // slowMo: 250,
+        args: [
+            `--window-size=${width},${height}`,
+            '--no-sandbox', /** required! @see https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md#running-puppeteer-on-travis-ci */
+        ],
     });
     page = await browser.newPage();
     await page.setViewport({ width, height });

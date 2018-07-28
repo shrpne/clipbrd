@@ -5,4 +5,6 @@ module.exports = {
     transform: {
         '^.+\\.jsx?$': 'babel-jest',
     },
+    /** fix @see https://github.com/facebook/jest/issues/6766 */
+    testURL: 'http://localhost/',
 };
