@@ -14,7 +14,7 @@
     "bundle:min": "rollup -c build/rollup.uglify.config.js",
     "lint": "eslint --ext .js ./src ./test",
     "lint:fix": "eslint --ext .js ./src ./test --fix",
-    "test": "npm run lint && jest",
+    "test": "npm run bundle && npm run lint && jest",
     "prepublishOnly": "npm run test && npm run build"
   },
   "repository": {
