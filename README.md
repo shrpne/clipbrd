@@ -2,9 +2,12 @@
 
 [![NPM Package](https://img.shields.io/npm/v/clipbrd.svg?style=flat-square)](https://www.npmjs.org/package/clipbrd)
 [![Minified Size](https://img.shields.io/bundlephobia/min/clipbrd.svg?style=flat-square)](https://bundlephobia.com/result?p=clipbrd)
+[![Build Status](https://img.shields.io/travis/com/shrpne/clipbrd/master.svg?style=flat-square)](https://travis-ci.com/shrpne/clipbrd)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/shrpne/clipbrd/blob/master/LICENSE)
 
 Lightweight module to copy text to the clipboard in modern browsers *(< 1kB minified)*
+
+[Demo JSFiddle](https://jsfiddle.net/shrpne/eyw596nz/)
 
 
 ## Install
