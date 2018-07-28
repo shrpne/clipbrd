@@ -43,7 +43,7 @@ describe('clipbrd', () => {
         expect(supported).toEqual(true);
     }, 16000);
 
-    test('copy custom test', async () => {
+    test('copy custom text', async () => {
         await page.evaluate(() => {
             window.clipbrd.copy('AbcdeF 123');
             const input = document.createElement('input');
