@@ -19,7 +19,7 @@ beforeAll(async () => {
     await page.setViewport({ width, height });
     await page.goto(`file:${path.join(__dirname, '/../example/index.html')}`);
     // await page.bringToFront(); // required!
-});
+}, 20000);
 afterAll(() => {
     browser.close();
 });
