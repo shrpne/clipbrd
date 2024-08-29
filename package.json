@@ -1,12 +1,21 @@
 {
   "name": "clipbrd",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lightweight copy to clipboard for modern browsers",
   "main": "dist/index.js",
   "module": "src/index.js",
+  "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "module": "./src/index.js",
+      "default": "./dist/index.js"
+    }
+  },
   "files": [
     "/src/",
-    "/dist/"
+    "/dist/",
+    "/types/"
   ],
   "scripts": {
     "build": "npm run bundle && npm run bundle:min",
